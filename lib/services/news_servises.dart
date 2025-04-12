@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:news_app/model/article_model.dart';
 
-class NewsServises {
+class NewsServices {
   final Dio dio;
 
-  NewsServises(this.dio);
+  NewsServices(this.dio);
 
   Future<List<ArticleModel>> getGeneralNews() async {
     Response response = await dio.get(
